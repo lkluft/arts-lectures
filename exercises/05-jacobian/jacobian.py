@@ -157,7 +157,7 @@ def plot_opacity_profile(height, opacity, ax=None):
 
 
 def calc_jacobians(species="H2O", fmin=150e9, fmax=200e9, fnum=200, verbosity=2):
-    """Caculate jacobians for a given species and frequency range."""
+    """Calculate jacobians for a given species and frequency range."""
     ws = ty.arts.workspace.Workspace(verbosity=0)
     ws.execute_controlfile("general/general.arts")
     ws.execute_controlfile("general/continua.arts")
